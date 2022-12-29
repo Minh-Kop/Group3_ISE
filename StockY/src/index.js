@@ -1,49 +1,34 @@
-const path = require('path');
-const express = require('express');
-const morgan = require('morgan');
-const methodOverride = require('method-override');
-const handlebars = require('express-handlebars');
+const path = require('path')
+//! đang sử dụng http
+const express = require('express')// tìm express trong folder module
+const morgan = require('morgan')
+const handlebars = require('express-handlebars')
+const app = express() //khởi web site
+const port = 3000 //port of server
 
-const route = require('./routes');
-const db = require('./config/db');
+//! dùng express để xử lý các trường hợp path tĩnh: http://localhost:3000/img/logo.png
+app.use(express.static(path.join(__dirname, 'public')))
 
-// Connect to DB
-db.connect();
+//!http logger
+app.use(morgan('combined'))
 
-const app = express();
-const port = 3000;
+//!template engine
+app.engine('hbs',handlebars.engine({
+  extname: '.hbs' //! modifi tên file handlebars => hbs 
+}))//định nghĩa
+app.set('view engine','hbs')//sử dụng
+//! custom path view folder
+app.set('views',path.join(__dirname,'resources/views'));
+//console.log('PATH: ',path.join(__dirname,'resources/views'))
+//! render giao diện dựa trên handlebar
+app.get('/', (req, res) => { //route function
+  res.render('home')
+})
 
-// Use static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.get('/news', (req, res) => { //route function
+  res.render('news')
+})
 
-app.use(
-    express.urlencoded({
-        extended: true,
-    }),
-);
-app.use(express.json());
-
-app.use(methodOverride('_method'));
-
-// HTTP logger
-// app.use(morgan('combined'));
-
-// Template engine
-app.engine(
-    'hbs',
-    handlebars({
-        extname: '.hbs',
-        helpers: {
-            sum: (a, b) => a + b,
-        },
-    }),
-);
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resources', 'views'));
-
-// Routes init
-route(app);
-
-app.listen(port, () =>
-    console.log(`App listening at http://localhost:${port}`),
-);
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
