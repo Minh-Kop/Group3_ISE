@@ -1,10 +1,10 @@
 const searchRouter = require('./search')
+const homeRouter = require('./home')
+
 
 function route(app){
     app.use('/search',searchRouter)
-    app.get('/', (req, res) => {
-        res.render('home')
-      })
+    app.use('/',homeRouter)
       
     
 }

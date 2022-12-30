@@ -4,6 +4,10 @@ const express = require('express')
 const morgan = require('morgan')
 const {engine} = require ('express-handlebars');
 const route = require('./routes')
+const db = require('./config/db');
+
+// Connect to DB
+db.connect();
 
 //! khoi tao web
 const app = express()
@@ -34,5 +38,5 @@ route(app)
 
 //! start web server and listen
 app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`)
+  console.log(`Listening on port http://localhost:${port}`)
 })
