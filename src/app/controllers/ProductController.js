@@ -1,8 +1,7 @@
 const Product = require('../models/Product');
 const { mutipleMongooseToObject } = require('../../util/mongoose');
 
-class ProductController{
-   
+class ProductController {
     // index(req, res,next) {
     //     Product.find({})
     //         .then((products) =>
@@ -12,13 +11,9 @@ class ProductController{
     //         )
     //         .catch(next);
     // }
-    show(req,res,next){
-        res.send('ok ok')
+    show(req, res, next) {
+        res.send('ok ok');
     }
-    
 }
-    
-    
 
-
-module.exports = new ProductController
+module.exports = new ProductController();

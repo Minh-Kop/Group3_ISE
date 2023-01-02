@@ -1,7 +1,7 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 
-const courseController = require('../app/controllers/ProductController')
-router.get('/:slug',courseController.show)
+const courseController = require('../app/controllers/ProductController');
+router.get('/:slug', courseController.show);
 
-module.exports = router
+module.exports = router;
