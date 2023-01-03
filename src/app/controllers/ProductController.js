@@ -11,8 +11,14 @@ class ProductController {
     //         )
     //         .catch(next);
     // }
+
+    // [GET] /products/:slug
     show(req, res, next) {
-        res.send('ok ok');
+        Product.findOne({ slug: req.params.slug })
+            .then(products => {
+                res.render('products/show');
+            })
+            .catch(next);
     }
 }
 

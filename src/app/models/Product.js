@@ -5,6 +5,7 @@ const Product = new Schema({
     name: String,
     price: String,
     image: String,
+    slug: String,
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
 });
