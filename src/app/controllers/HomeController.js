@@ -1,6 +1,6 @@
 const Product = require('../models/Product');
 const { mutipleMongooseToObject } = require('../../util/mongoose');
-
+//! home page
 class HomeController {
     index(req, res, next) {
         Product.find({})
