@@ -1,37 +1,42 @@
-<form>
+<form class="form-center" style="border: 2px; width: 50%; margin: auto">
+  <div class="sign-in-label" style="font-family: 'Times New Roman', Times, serif">
+    <h1 style="color: red;">SIGN IN</h1>
+  </div>
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="email" id="form2Example1" class="form-control" />
     <label class="form-label" for="form2Example1">Username</label>
+    <input type="email" id="form2Example1" class="form-control" />
   </div>
 
   <!-- Password input -->
   <div class="form-outline mb-4">
-    <input type="password" id="form2Example2" class="form-control" />
     <label class="form-label" for="form2Example2">Password</label>
+    <input type="password" id="form2Example2" class="form-control" />
   </div>
 
   <!-- 2 column grid layout for inline styling -->
-  <div class="row mb-4">
-    <div class="col d-flex justify-content-center">
+  <div class="row mb-3">
+    <div class="col d-flex">
       <!-- Checkbox -->
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
         <label class="form-check-label" for="form2Example31"> Remember me </label>
+        <input class="form-check-input" type="checkbox" value="" id="form2Example31" unchecked />
       </div>
     </div>
 
     <div class="col">
       <!-- Simple link -->
-      <a href="#!">Forgot password?</a>
+      <a href="#!" style="color: teal; text-decoration: none">Forgot password?</a>
     </div>
   </div>
 
   <!-- Submit button -->
-  <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+  <button type="button" class="btn btn-block mb-4" style="color: wheat; background: teal; width: 100%">
+    Sign in
+  </button>
 
   <!-- Register buttons -->
   <div class="text-center">
-    <p>Not a member? <a href="/sign-up">Register</a></p>
+    <p>Don't have an account? <a href="/sign-up" style="color: teal; text-decoration: none">Register</a></p>
   </div>
 </form>
