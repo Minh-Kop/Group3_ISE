@@ -1,17 +1,17 @@
-<form class="form-center" style="border: 2px; width: 50%; margin: auto">
+<form action="/sign-in/check" method="POST" class="form-center" style="border: 2px; width: 50%; margin: auto">
   <div class="sign-in-label" style="font-family: 'Times New Roman', Times, serif">
     <h1 style="color: red;">SIGN IN</h1>
   </div>
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <label class="form-label" for="form2Example1">Username</label>
-    <input type="email" id="form2Example1" class="form-control" />
+    <label class="form-label" for="usrname">Username</label>
+    <input type="text" name="usrname" id="usrname" class="form-control" />
   </div>
 
   <!-- Password input -->
   <div class="form-outline mb-4">
-    <label class="form-label" for="form2Example2">Password</label>
-    <input type="password" id="form2Example2" class="form-control" />
+    <label class="form-label" for="password">Password</label>
+    <input type="text" name="password" id="password" class="form-control" />
   </div>
 
   <!-- 2 column grid layout for inline styling -->
@@ -31,7 +31,7 @@
   </div>
 
   <!-- Submit button -->
-  <button type="button" class="btn btn-block mb-4" style="color: wheat; background: teal; width: 100%">
+  <button type="submit" class="btn btn-block mb-4" style="color: wheat; background: teal; width: 100%">
     Sign in
   </button>
 
