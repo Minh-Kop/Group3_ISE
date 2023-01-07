@@ -1,0 +1,41 @@
+body{margin-top:20px;
+    background:#eee;
+    }
+    
+    /*panel*/
+    .panel {
+        border: none;
+        box-shadow: none;
+    }
+    .pro-img-details img {
+        width: 100%;
+    }
+    
+    .pro-d-title {
+        font-size: 16px;
+        margin-top: 0;
+    }
+    
+    .product_meta {
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .product_meta span {
+        display: block;
+       
+    }
+    .product_meta a, .pro-price{
+        color:#fc5959 ;
+    }
+    
+    .pro-price{
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .posted_in{
+        font-size: 18px;
+    }
+    .btn{
+        margin-top: 10px;
+    }
