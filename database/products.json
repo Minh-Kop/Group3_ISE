@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "63ae5a9c7befb6c3affc5e57"
+  },
+  "name": "SB Dunk Low eBay Sandy Boedecker",
+  "price": "$100",
+  "image": "https://images.stockx.com/images/Nike-SB-Dunk-Low-eBay-Sandy-Boedecker-Product.jpg",
+  "slug": "01",
+  "brand": "Nike",
+  "category": "sneaker"
+},{
+  "_id": {
+    "$oid": "63b24e201586ab25ec81ffe5"
+  },
+  "name": "adias",
+  "price": "$100",
+  "image": "https://images.stockx.com/images/Air-Jordan-11-Retro-Cherry-2022-Product.jpg",
+  "slug": "02"
+},{
+  "_id": {
+    "$oid": "63b265caecdaa2ac90085665"
+  },
+  "name": "adias",
+  "price": "$100",
+  "image": "https://images.stockx.com/images/Air-Jordan-11-Retro-Cherry-2022-Product.jpg",
+  "slug": "03"
+},{
+  "_id": {
+    "$oid": "63bed38a30160734ae3b01b4"
+  },
+  "name": "SB Dunk Low eBay Sandy Boedecker",
+  "price": "$120",
+  "image": "https://images.stockx.com/images/Nike-SB-Dunk-Low-eBay-Sandy-Boedecker-Product.jpg",
+  "slug": "04",
+  "brand": "Nike",
+  "category": "shoe"
+}]
