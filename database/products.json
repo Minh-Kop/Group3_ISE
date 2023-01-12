@@ -6,32 +6,128 @@
   "price": "$100",
   "image": "https://images.stockx.com/images/Nike-SB-Dunk-Low-eBay-Sandy-Boedecker-Product.jpg",
   "slug": "01",
-  "brand": "Nike",
-  "category": "sneaker"
+  "category": "sneaker",
+  "gender": "male",
+  "brand": "Nike"
 },{
   "_id": {
-    "$oid": "63b24e201586ab25ec81ffe5"
+    "$oid": "63bfc792a47558d5bc5d76bf"
   },
-  "name": "adias",
-  "price": "$100",
+  "name": "A Bathing Ape Bape Sta JJJJound White Navy",
+  "price": "$200",
+  "image": "https://images.stockx.com/images/A-Bathing-Ape-Bape-Sta-JJJJound-White-Navy.jpg",
+  "slug": "02",
+  "category": "sneaker",
+  "gender": "female",
+  "brand": "A Bathing Ape"
+},{
+  "_id": {
+    "$oid": "63bfc881a47558d5bc5d76c0"
+  },
+  "name": "Jordan 11 Retro\nCherry",
+  "price": "$265",
   "image": "https://images.stockx.com/images/Air-Jordan-11-Retro-Cherry-2022-Product.jpg",
-  "slug": "02"
+  "slug": "03",
+  "category": "sneaker",
+  "gender": "male",
+  "brand": "Air Jordan"
 },{
   "_id": {
-    "$oid": "63b265caecdaa2ac90085665"
+    "$oid": "63bfc945a47558d5bc5d76c1"
   },
-  "name": "adias",
-  "price": "$100",
-  "image": "https://images.stockx.com/images/Air-Jordan-11-Retro-Cherry-2022-Product.jpg",
-  "slug": "03"
-},{
-  "_id": {
-    "$oid": "63bed38a30160734ae3b01b4"
-  },
-  "name": "SB Dunk Low eBay Sandy Boedecker",
-  "price": "$120",
-  "image": "https://images.stockx.com/images/Nike-SB-Dunk-Low-eBay-Sandy-Boedecker-Product.jpg",
+  "name": "Puma LaMelo Ball MB02 Slime",
+  "price": "$160",
+  "image": "https://images.stockx.com/images/Puma-LaMelo-Ball-MB02-Slime-Product.jpg",
   "slug": "04",
-  "brand": "Nike",
-  "category": "shoe"
+  "category": "sneaker",
+  "gender": "male",
+  "brand": "Puma"
+},{
+  "_id": {
+    "$oid": "63bfc9d4a47558d5bc5d76c2"
+  },
+  "name": "Prada Mary Jane 50mm T-Strap Shoe Black Brushed Leather",
+  "price": "$800",
+  "image": "https://images.stockx.com/images/Prada-Mary-Jane-50mm-T-Strap-Shoe-Black-Brushed-Leather.jpg",
+  "slug": "05",
+  "category": "shoe",
+  "gender": "female",
+  "brand": "Prada"
+},{
+  "_id": {
+    "$oid": "63bfcadaa47558d5bc5d76c3"
+  },
+  "name": "Adidas Yeezy Boost 350 V2 Zebra",
+  "price": "$429",
+  "image": "https://images.stockx.com/images/Adidas-Yeezy-Boost-350-V2-Zebra-Product-1.jpg",
+  "slug": "06",
+  "category": "sneaker",
+  "gender": "female",
+  "brand": "Adidas"
+},{
+  "_id": {
+    "$oid": "63bfce60a47558d5bc5d76c8"
+  },
+  "name": "Air Jordan 1 Mid White Black Red 2022",
+  "price": "$389",
+  "image": "https://images.stockx.com/images/Air-Jordan-1-Mid-White-Black-Red-2022-Product.jpg",
+  "slug": "07",
+  "category": "sneaker",
+  "gender": "male",
+  "brand": "Air Jordan"
+},{
+  "_id": {
+    "$oid": "63bfcee6a47558d5bc5d76c9"
+  },
+  "name": "Prada Monolith 55mm Lace Up Loafer White Brushed Leather W",
+  "price": "$700",
+  "image": "https://images.stockx.com/images/Prada-Monolith-55mm-Lace-Up-Loafer-White-Brushed-Leather-W.jpg",
+  "slug": "08",
+  "category": "shoe",
+  "gender": "female",
+  "brand": "Prada"
+},{
+  "_id": {
+    "$oid": "63bfcff0a47558d5bc5d76ca"
+  },
+  "name": "adidas Gazelle Bold Pink Glow W",
+  "price": "$177",
+  "image": "https://images.stockx.com/images/adidas-Gazelle-Bold-Pink-Glow-W.jpg",
+  "slug": "09",
+  "category": "sneaker",
+  "gender": "female",
+  "brand": "Adidas"
+},{
+  "_id": {
+    "$oid": "63bfd0b1a47558d5bc5d76cb"
+  },
+  "name": "Nike Blazer Mid 77 Vintage White Black",
+  "price": "$277",
+  "image": "https://images.stockx.com/images/Nike-Blazer-Mid-77-Vintage-White-Black-Product.jpg",
+  "slug": "10",
+  "category": "sneaker",
+  "gender": "male",
+  "brand": "Nike"
+},{
+  "_id": {
+    "$oid": "63bfd161a47558d5bc5d76cc"
+  },
+  "name": "Puma MB01 LaMelo Ball Galaxy",
+  "price": "$467",
+  "image": "https://images.stockx.com/images/Puma-MB01-LaMelo-Ball-Galaxy-Product.jpg",
+  "slug": "11",
+  "category": "sneaker",
+  "gender": "male",
+  "brand": "Puma"
+},{
+  "_id": {
+    "$oid": "63bfd270a47558d5bc5d76cd"
+  },
+  "name": "UGG Classic Ultra Mini Platform Chestnut W",
+  "price": "$777",
+  "image": "https://images.stockx.com/images/UGG-Classic-Ultra-Mini-Platform-Chestnut-W-Product.jpg",
+  "slug": "12",
+  "category": "shoe",
+  "gender": "female",
+  "brand": "UGG"
 }]
