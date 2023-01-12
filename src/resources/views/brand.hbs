@@ -1,0 +1,17 @@
+<div class="row">
+        {{#each products}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card card-product-item" style="background-color: rgb(60, 121, 245); height: 350px;">
+                <a href="/products/{{this.slug}}">
+                    <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
+                </a>
+                <div class="card-body">
+                    <a href="/products/{{this.slug}}" style="text-decoration: none; text-transform: uppercase; color: crimson;">
+                        <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                    <p class="card-text" style="color: crimson;">{{this.price}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}} 
+    </div>
