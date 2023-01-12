@@ -10,6 +10,6 @@ router.get('/male', homeController.male);
 router.get('/female', homeController.female);
 router.get('/sneaker', homeController.sneaker);
 router.get('/shoe', homeController.shoe);
-
+router.post('/:key', homeController.searchproduct);
 router.get('/', homeController.index);
 module.exports = router;

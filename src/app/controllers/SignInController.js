@@ -13,7 +13,6 @@ class SignInController {
         .then(user => {
             if(user) {
                 res.render('home');
-                
             }
             else {
                 res.json({

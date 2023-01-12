@@ -12,6 +12,17 @@ class HomeController {
             .catch(next);
     }
 
+    searchproduct(req,res,next) {
+        var key = req.body.key;
+        console.log(key);
+        Product.find({$or: [{name:key}]})
+        .then((product) =>
+            res.render('home', {
+            products: mutipleMongooseToObject(product),
+            }),
+        )
+        .catch(next);
+    }
     jordan(req, res, next) {
         Product.find({brand: 'Air Jordan'})
             .then((products) =>

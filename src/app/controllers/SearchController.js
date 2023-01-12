@@ -9,12 +9,12 @@ class SearchController {
     show(req, res) {
         res.send('new detail');
     }
-    search(req,res,next) {
+    searchproduct(req,res,next) {
         var key = req.body.key;
-        console.log(key);
-        Product.find({$or: [{name:key}]})
+
+        Product.findOne({$or: [{name:key}]})
         .then((product) =>
-            res.render('./products/show', {
+            res.render('home', {
             product: mongooseToObject(product),
             }),
         )
