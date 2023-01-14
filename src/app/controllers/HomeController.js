@@ -17,7 +17,7 @@ class HomeController {
         console.log(key);
         Product.find({$or: [{name:key},{category:key},{brand:key},{gender:key}]})
         .then((product) =>
-            res.render('home', {
+            res.render('search', {
             products: mutipleMongooseToObject(product),
             }),
         )

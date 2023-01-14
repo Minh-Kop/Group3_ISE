@@ -14,7 +14,7 @@ class SearchController {
 
         Product.findOne({$or: [{name:key}]})
         .then((product) =>
-            res.render('home', {
+            res.render('search', {
             product: mongooseToObject(product),
             }),
         )
